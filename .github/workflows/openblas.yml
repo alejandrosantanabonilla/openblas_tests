@@ -23,8 +23,4 @@ jobs:
           platform: '${{ matrix.platform }}'
           cc: 1
       - name: Build foo.exe
-        uses: ./.github/actions/build-foo
-      - name: Run foo.exe
-        uses: ./.github/actions/run-foo
-      - name: Check symlinks
-        uses: ./.github/actions/check-cc
+        uses: gcc 
